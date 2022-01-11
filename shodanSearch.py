@@ -42,3 +42,6 @@ def shodanLookup(ip):
     except Exception as e:
         print('Error: %s' % e)
         return []
+
+results = queryShodan("org:Google LLC")
+print(results)
