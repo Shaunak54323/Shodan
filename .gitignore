@@ -1,1 +1,2 @@
-apiKey.txt
+./apiKey.txt
+__pycache__/
