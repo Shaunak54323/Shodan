@@ -13,7 +13,7 @@ commonSubs = {
 
 
 def genVariations(password):
-    variations = []
+    variations = [""]
     for p in password:
         uppers = [v + p.upper() for v in variations]
         lowers = [v + p.lower() for v in variations]
@@ -43,3 +43,8 @@ def genPasswords(password):
     suffixes = genSuffixes()
     passwords = variations + [[v + s for v in variations] for s in suffixes]
     return passwords
+
+c = genPasswords("prajyot")
+for i in c:
+    if "@" in i:
+        print(i)
