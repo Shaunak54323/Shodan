@@ -45,6 +45,4 @@ def genPasswords(password):
     return passwords
 
 c = genPasswords("password")
-for i in c:
-    if "@" in i:
-        print(i)
+print(c)
