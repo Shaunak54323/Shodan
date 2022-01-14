@@ -44,7 +44,7 @@ def genPasswords(password):
     passwords = variations + [[v + s for v in variations] for s in suffixes]
     return passwords
 
-c = genPasswords("prajyot")
+c = genPasswords("password")
 for i in c:
     if "@" in i:
         print(i)
